@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+    
+    
+	<!-- *********注册页面************ -->
+    <RelativeLayout 
+        android:id="@+id/RegisterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <RelativeLayout 
+	        android:id="@+id/TelLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="60dp"
+	        >
+	        <EditText 
+		        android:id="@+id/TelEdit"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="请输入您的手机号码"
+		        android:textSize="20sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+		    <!--Button
+		        android:id="@+id/GetVerficodeBtn"
+		        android:layout_toRightOf="@id/TelEdit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="获取验证码"
+		        android:textSize="10sp"
+		        android:onClick="OnClick"
+		        /-->
+	    </RelativeLayout>
+	    
+        
+        <RelativeLayout 
+		    android:id="@+id/VerficodeLayout"
+		    android:layout_below="@id/TelLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="60dp"
+	        >
+		    <!--TextView
+		        android:id="@+id/VerficodeTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="验证码"
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/VerficodeEdit"
+		        android:layout_toRightOf="@id/VerficodeTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:hint="请输入验证码"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        /-->
+	    </RelativeLayout>
+	    
+	    
+		<RelativeLayout 
+		    android:id="@+id/UsernameLayout"
+		    android:layout_below="@id/VerficodeLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+		    <TextView 
+		        android:id="@+id/UsernameTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="用户名"
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/UsernameEdit"
+		        android:layout_toRightOf="@id/UsernameTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:hint="请输入用户名"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+		    android:id="@+id/PasswdLayout"
+		    android:layout_below="@id/UsernameLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+		    <TextView 
+		        android:id="@+id/PasswdTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="  密码  "
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/PasswdEdit"
+		        android:layout_toRightOf="@id/PasswdTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:inputType="textPassword"
+		        android:hint="请输入密码"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+		    android:layout_below="@id/PasswdLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+	        
+		     <Button 
+			    android:id="@+id/mRegisterBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="30dp"
+			    android:background="@drawable/mloginbtnselector"
+			    android:text=" 已有账号 "
+			    android:onClick="OnClick"
+				/>
+		    <Button 
+			    android:id="@+id/RegisterBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/mRegisterBtn"
+			    android:background="@drawable/loginbtnselector"
+			    android:text="  注册  "
+			    android:onClick="OnClick"
+				/>
+		   
+	    </RelativeLayout>
+	    
+<!-- 		<Button 
+		    android:id="@+id/RegisterBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="60dp"
+		    android:background="#FFFF8080"
+		    android:text="  注册  "
+		    /> -->
+        
+    </RelativeLayout>
+    
+    <!-- *********登录页面************ -->
+    <RelativeLayout 
+        android:id="@+id/LoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+        
+        <RelativeLayout 
+		    android:id="@+id/LUsernameLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="20dp"
+	        >
+		    <TextView 
+		        android:id="@+id/LUsernameTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="用户名"
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/LUsernameEdit"
+		        android:layout_toRightOf="@id/LUsernameTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:hint="请输入用户名"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+		    android:id="@+id/LPasswdLayout"
+		    android:layout_below="@id/LUsernameLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+		    <TextView 
+		        android:id="@+id/LPasswdTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="  密码  "
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/LPasswdEdit"
+		        android:layout_toRightOf="@id/LPasswdTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:inputType="textPassword"
+		        android:hint="请输入密码"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+		    android:layout_below="@id/LPasswdLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+	        <Button 
+			    android:id="@+id/mLoginBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="30dp"
+			    android:background="@drawable/mloginbtnselector"
+			    android:text=" 未有账号 "
+			    android:onClick="OnClick"
+				/>
+		    <Button 
+			    android:id="@+id/LoginBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/mLoginBtn"
+			    android:layout_marginRight="30dp"
+			    android:background="@drawable/loginbtnselector"
+			    android:text="  登录  "
+			    android:onClick="OnClick"
+				/>
+		    <!--Button
+			    android:id="@+id/forgetpwdBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/LoginBtn"
+			    android:background="@drawable/mloginbtnselector"
+			    android:text="忘记密码"
+			    android:onClick="OnClick"
+				/-->
+		    
+	    </RelativeLayout>
+	    
+        
+    </RelativeLayout>
+    
+    <!-- *********忘记密码页面************ -->
+    <!--RelativeLayout
+        android:id="@+id/TempLoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true">
+        
+        <RelativeLayout 
+		    android:id="@+id/TLPhoneNumberLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="20dp"
+	        >
+		    <TextView 
+		        android:id="@+id/TLPhoneNumberTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="15dp"
+		        android:hint="手机号码"
+		        android:textSize="20sp"
+		        />
+	        <EditText 
+		        android:id="@+id/TLPhoneNumberEdit"
+		        android:layout_toRightOf="@id/TLPhoneNumberTextView"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:hint="请输入手机号码"
+		        android:textSize="16sp"
+		        android:background="@drawable/red_transparency_shape"
+		        />
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+		    android:layout_below="@id/TLPhoneNumberLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        >
+	        <Button 
+			    android:id="@+id/TLBackBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="30dp"
+			    android:background="@drawable/mloginbtnselector"
+			    android:text="返回"
+			    android:onClick="OnClick"
+				/>
+		    <Button 
+			    android:id="@+id/TLoginBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/TLBackBtn"
+			    android:layout_marginRight="30dp"
+			    android:background="@drawable/loginbtnselector"
+			    android:text="生成临时密码"
+			    android:onClick="OnClick"
+				/>
+		    
+	    </RelativeLayout>
+	    
+        
+    </RelativeLayout-->
+    
+
+
+</RelativeLayout>

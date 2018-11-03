@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\wzx\AS\SmartGeography_T2\app\libs\GetuiExt-2.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7825bfa9135d693e2046eab96fd94e724e0f9eda">
+        <dex dex="D:\wzx\AS\SmartGeography_T2\app\build\intermediates\pre-dexed\debug\GetuiExt-2.0.3_934c675c7a088aa291601b3a16bf2e2183949773.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\wzx\AS\SmartGeography_T2\app\libs\BaiduLBS_Android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95a1969738d6f75acc2b6c1478abfc3421a314e9">
+        <dex dex="D:\wzx\AS\SmartGeography_T2\app\build\intermediates\pre-dexed\debug\BaiduLBS_Android_957c96a9f704bb307eb6336c299c84edb6a492b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\wzx\AS\SmartGeography_T2\app\libs\GetuiSDK2.7.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de9bd9eedb38574a7741b18e34fc9e1f1ca0bc7b">
+        <dex dex="D:\wzx\AS\SmartGeography_T2\app\build\intermediates\pre-dexed\debug\GetuiSDK2.7.0.0_0d424590c9077a08b6ff53948cd18f3f01110448.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\wzx\AS\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\wzx\AS\SmartGeography_T2\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_3902b55a1c85f26153b65d3222edf6281c41070b.jar" />
+    </item>
+
+</items>

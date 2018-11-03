@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent" 
+    android:layout_height="75dp"  
+    android:paddingLeft="10dp" 
+    android:paddingRight="10dp">  
+    <ImageView  
+        android:id="@+id/imgView"  
+        android:layout_height="70dp"  
+        android:layout_width="80dp"  
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter" />  
+    <LinearLayout
+        android:orientation="vertical" 
+        android:layout_height="fill_parent"  
+        android:layout_width="fill_parent" 
+        android:layout_toRightOf="@id/imgView"  
+        android:paddingLeft="8dp">  
+        <TextView  
+            android:id="@+id/TextView1"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:textColor="#808080"  
+            android:textSize="20dp" />  
+        <TextView  
+            android:id="@+id/TextView2"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:textColor="#808080"  
+            android:textSize="14dp" />  
+        <TextView  
+            android:id="@+id/TextView3"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:textColor="#808080"  
+            android:textSize="12dp" />  
+    </LinearLayout>  
+    <CheckBox  
+        android:id="@+id/mCheckBox"  
+        android:layout_height="match_parent"        
+        android:layout_width="60dp"  
+        android:gravity="center"
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"
+        android:checked="false"  
+        android:focusable="false" />  
+</RelativeLayout> 
